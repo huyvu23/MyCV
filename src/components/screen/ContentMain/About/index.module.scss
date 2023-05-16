@@ -1,4 +1,88 @@
 .container {
-  background-color: red;
+  background-color: white;
   height: 100vh;
+}
+
+.wrapIntro {
+  padding: 50px;
+}
+.wrapFullName {
+  font-size: 50px;
+  font-weight: 700;
+  color: #293651;
+  margin-top: 20px;
+}
+
+.name:hover {
+  color: #00a78e;
+}
+
+.myCard {
+  font-size: 22px;
+}
+
+.intro {
+  font-size: 30px;
+  font-weight: 600;
+  color: #00a78e;
+  letter-spacing: 4px;
+}
+
+@-webkit-keyframes my {
+  0% {
+    color: #00a78e;
+  }
+  50% {
+    color: #fff;
+  }
+  100% {
+    color: #00a78e;
+  }
+}
+@-moz-keyframes my {
+  0% {
+    color: #00a78e;
+  }
+  50% {
+    color: #fff;
+  }
+  100% {
+    color: #00a78e;
+  }
+}
+@-o-keyframes my {
+  0% {
+    color: #00a78e;
+  }
+  50% {
+    color: #fff;
+  }
+  100% {
+    color: #00a78e;
+  }
+}
+@keyframes my {
+  0% {
+    color: #00a78e;
+  }
+  50% {
+    color: #fff;
+  }
+  100% {
+    color: #00a78e;
+  }
+}
+
+.textAnimation {
+  font-weight: bold;
+  -webkit-animation: my 700ms infinite;
+  -moz-animation: my 700ms infinite;
+  -o-animation: my 700ms infinite;
+  animation: my 700ms infinite;
+  font-style: italic;
+}
+
+.textSkill {
+  font-size: medium;
+  font-weight: 400;
 }

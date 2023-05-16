@@ -16,6 +16,10 @@ const { Sider, Content } = Layout
 function App() {
   const refAbout = useRef(null)
   const refExperience = useRef(null)
+  const refEducation = useRef(null)
+  const refSkill = useRef(null)
+  const refProject = useRef(null)
+  const refInterest = useRef(null)
 
   const handleClick = (e) => {
     switch (parseInt(e.key)) {
@@ -24,6 +28,18 @@ function App() {
         break
       case 2:
         handleScroll(refExperience)
+        break
+      case 3:
+        handleScroll(refEducation)
+        break
+      case 4:
+        handleScroll(refSkill)
+        break
+      case 5:
+        handleScroll(refProject)
+        break
+      case 6:
+        handleScroll(refInterest)
         break
       default:
       // code block
@@ -90,7 +106,14 @@ function App() {
         </Sider>
         <Layout className="site-layout">
           <Content>
-            <ContentMain refAbout={refAbout} refExperience={refExperience} />
+            <ContentMain
+              refAbout={refAbout}
+              refExperience={refExperience}
+              refEducation={refEducation}
+              refSkill={refSkill}
+              refProject={refProject}
+              refInterest={refInterest}
+            />
           </Content>
         </Layout>
       </Layout>
