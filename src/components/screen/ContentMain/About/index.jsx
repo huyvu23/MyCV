@@ -41,7 +41,7 @@ export default function About(props) {
               <div style={{ background: "white", padding: "16px" }}>
                 <h3>CONTACT</h3>
                 <QRCode
-                  size={220}
+                  size={180}
                   value="https://www.facebook.com/profile.php?id=100029118017913"
                 />
               </div>

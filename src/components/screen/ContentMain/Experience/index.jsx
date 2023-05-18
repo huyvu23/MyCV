@@ -9,8 +9,14 @@ export default function Experience(props) {
           <div className={styles.wrap}>
             <h2>Experience</h2>
             <div>
-              <h3>VNSOLUTION</h3>
-              <h4>Front-end Developer</h4>
+              <h3 style={{ color: "#00a78e" }}>VNSOLUTION</h3>
+              <div>
+                <strong>Front-end Developer</strong>
+                <span style={{ marginLeft: "10px" }}>(4/2022 - PRESENT)</span>
+              </div>
+              <div>
+                <h4>NGHI SON PMS</h4>
+              </div>
             </div>
           </div>
         </Fade>

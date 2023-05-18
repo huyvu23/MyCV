@@ -1,10 +1,36 @@
-.siderStyle {
-  color: white;
-  height: 100vh;
-  position: fixed !important;
-  left: 0;
-  top: 0;
-  bottom: 0;
+@import "./scss//variable";
+@import "./scss/mixins";
+
+@include responsive_375 {
+  .siderStyle {
+    display: none;
+  }
+  .headerStyle {
+    padding: 0 15px;
+    background-color: $colorMain;
+    position: fixed;
+    width: 100vw;
+    z-index: 999;
+  }
+  .menuIcon {
+    color: $white;
+    font-size: 26px;
+  }
+}
+
+@include responsive_1024 {
+  .siderStyle {
+    display: flex !important;
+    color: white;
+    height: 100vh;
+    position: fixed !important;
+    left: 0;
+    top: 0;
+    bottom: 0;
+  }
+  .headerStyle {
+    display: none;
+  }
 }
 
 .container {

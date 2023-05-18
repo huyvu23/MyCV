@@ -1,5 +1,5 @@
 import styles from "./App.module.scss"
-import { Layout, Menu, Image } from "antd"
+import { Layout, Menu, Image, Drawer, Space, Button } from "antd"
 import {
   UserOutlined,
   HighlightOutlined,
@@ -7,13 +7,18 @@ import {
   CustomerServiceOutlined,
   ProjectOutlined,
   IdcardOutlined,
+  MenuOutlined,
+  CloseOutlined,
 } from "@ant-design/icons"
 import ContentMain from "./components/screen/ContentMain"
 import imageProfile from "../src/assets/royal3.jpg"
-import { useRef } from "react"
-const { Sider, Content } = Layout
+import { useRef, useState } from "react"
+
+const { Header, Sider, Content } = Layout
 
 function App() {
+  const [open, setOpen] = useState(false)
+  const [placement, setPlacement] = useState("left")
   const refAbout = useRef(null)
   const refExperience = useRef(null)
   const refEducation = useRef(null)
@@ -48,10 +53,23 @@ function App() {
 
   const handleScroll = (ref) => {
     ref.current?.scrollIntoView({ behavior: "smooth" })
+    onClose()
   }
+
+  const showDrawer = () => {
+    setOpen(true)
+  }
+  const onClose = () => {
+    setOpen(false)
+  }
+
+  //! breakpoint của sider khi màn hình nhỏ hơn giá trị đó sider antd sẽ thu gọn lại
 
   return (
     <>
+      <Header className={styles.headerStyle}>
+        <MenuOutlined className={styles.menuIcon} onClick={showDrawer} />
+      </Header>
       <Layout hasSider>
         <Sider className={styles.siderStyle}>
           <section className={styles.container}>
@@ -117,6 +135,61 @@ function App() {
           </Content>
         </Layout>
       </Layout>
+      <Drawer
+        title="VŨ QUANG HUY"
+        placement={placement}
+        closable={false}
+        onClose={onClose}
+        open={open}
+        key={placement}
+        extra={
+          <Space>
+            <Button onClick={onClose}>
+              <CloseOutlined />
+            </Button>
+          </Space>
+        }
+      >
+        <div className={styles.wrapMenu}>
+          <Menu
+            onClick={handleClick}
+            mode="inline"
+            defaultSelectedKeys={["1"]}
+            items={[
+              {
+                key: "1",
+                icon: <IdcardOutlined />,
+                label: "About",
+              },
+              {
+                key: "2",
+                icon: <HighlightOutlined />,
+                label: "Experience",
+              },
+              {
+                key: "3",
+                icon: <EnvironmentOutlined />,
+                label: "Education",
+              },
+              {
+                key: "4",
+                icon: <UserOutlined />,
+                label: "Skill",
+              },
+              {
+                key: "5",
+                icon: <ProjectOutlined />,
+                label: "Project",
+              },
+              {
+                key: "6",
+                icon: <CustomerServiceOutlined />,
+                label: "Interest",
+              },
+            ]}
+          />
+        </div>
+      </Drawer>
     </>
   )
 }

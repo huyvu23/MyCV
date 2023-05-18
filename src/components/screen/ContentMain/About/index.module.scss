@@ -1,11 +1,22 @@
+@import "../../../../../src/scss/variable";
+@import "../../../../../src/scss/mixins";
+
 .container {
-  background-color: white;
-  height: 100vh;
+  @include styleCommon;
 }
 
-.wrapIntro {
-  padding: 50px;
+@include responsive_1024 {
+  .wrapIntro {
+    padding: 50px;
+  }
 }
+
+@include responsive_375 {
+  .wrapIntro {
+    padding: 30px;
+  }
+}
+
 .wrapFullName {
   font-size: 50px;
   font-weight: 700;
@@ -13,8 +24,12 @@
   margin-top: 20px;
 }
 
+.nameOfCompany {
+  color: $colorMain;
+}
+
 .name:hover {
-  color: #00a78e;
+  color: $colorMain;
 }
 
 .myCard {
@@ -24,52 +39,52 @@
 .intro {
   font-size: 30px;
   font-weight: 600;
-  color: #00a78e;
+  color: $colorMain;
   letter-spacing: 4px;
 }
 
 @-webkit-keyframes my {
   0% {
-    color: #00a78e;
+    color: $colorMain;
   }
   50% {
     color: #fff;
   }
   100% {
-    color: #00a78e;
+    color: $colorMain;
   }
 }
 @-moz-keyframes my {
   0% {
-    color: #00a78e;
+    color: $colorMain;
   }
   50% {
     color: #fff;
   }
   100% {
-    color: #00a78e;
+    color: $colorMain;
   }
 }
 @-o-keyframes my {
   0% {
-    color: #00a78e;
+    color: $colorMain;
   }
   50% {
     color: #fff;
   }
   100% {
-    color: #00a78e;
+    color: $colorMain;
   }
 }
 @keyframes my {
   0% {
-    color: #00a78e;
+    color: $colorMain;
   }
   50% {
     color: #fff;
   }
   100% {
-    color: #00a78e;
+    color: $colorMain;
   }
 }
 

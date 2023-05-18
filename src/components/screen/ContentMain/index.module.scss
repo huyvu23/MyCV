@@ -1,0 +1,7 @@
+@import "../../../scss/mixins";
+
+@include responsive_1200 {
+  .container {
+    margin-left: 200px;
+  }
+}

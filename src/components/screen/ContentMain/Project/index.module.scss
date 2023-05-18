@@ -1,4 +1,36 @@
+@import "../../../../../src/scss/variable";
+@import "../../../../../src/scss/mixins";
+
 .container {
-  background-color: purple;
-  height: 100vh;
+  @include styleCommon;
+}
+.wrap {
+  padding: 20px 50px 50px 50px;
+  h2 {
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  strong {
+    margin-left: 10px;
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+    @include responsive_1024 {
+      li {
+        height: 40px;
+        line-height: 40px;
+      }
+    }
+    @include responsive_375 {
+      li {
+        line-height: 30px;
+      }
+    }
+  }
+}
+
+.colorIconFire {
+  color: $orange;
 }

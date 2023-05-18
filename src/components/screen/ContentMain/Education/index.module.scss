@@ -1,4 +1,6 @@
+@import "../../../../../src/scss/variable";
+@import "../../../../../src/scss/mixins";
+
 .container {
-  background-color: green;
-  height: 100vh;
+  @include styleCommon;
 }
