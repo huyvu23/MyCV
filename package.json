@@ -8,7 +8,8 @@
     "build": "vite build",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "deploy": "gh-pages -d dist -b new-gh-page"
+    "deploy": "gh-pages -d dist -b new-gh-page",
+    "homepage": "https://huyvu23.github.io/MyCV/"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.4.0",
