@@ -70,7 +70,7 @@ export default function Skill(props) {
                   return (
                     <>
                       <li>
-                        <AiFillCheckCircle />
+                        <AiFillCheckCircle className={styles.styleForIcon} />
                         <span>{item}</span>
                       </li>
                     </>

@@ -1,16 +1,38 @@
 @import "./scss//variable";
 @import "./scss/mixins";
 
+@include responsive_320 {
+  .siderStyle {
+    display: none;
+  }
+  .headerStyle {
+    @include headerCommon;
+  }
+  .menuIcon {
+    color: $white;
+    font-size: 24px;
+  }
+}
+
 @include responsive_375 {
   .siderStyle {
     display: none;
   }
   .headerStyle {
-    padding: 0 15px;
-    background-color: $colorMain;
-    position: fixed;
-    width: 100vw;
-    z-index: 999;
+    @include headerCommon;
+  }
+  .menuIcon {
+    color: $white;
+    font-size: 26px;
+  }
+}
+
+@include responsive_768 {
+  .siderStyle {
+    display: none;
+  }
+  .headerStyle {
+    @include headerCommon;
   }
   .menuIcon {
     color: $white;

@@ -41,3 +41,11 @@
   height: 100vh;
   background-color: $white;
 }
+
+@mixin headerCommon {
+  padding: 0 15px;
+  background-color: $colorMain;
+  position: fixed;
+  width: 100vw;
+  z-index: 999;
+}

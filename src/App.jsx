@@ -95,12 +95,12 @@ function App() {
                   {
                     key: "2",
                     icon: <HighlightOutlined />,
-                    label: "Experience",
+                    label: "Career Objective",
                   },
                   {
                     key: "3",
                     icon: <EnvironmentOutlined />,
-                    label: "Education",
+                    label: "Study and work",
                   },
                   {
                     key: "4",
@@ -164,12 +164,12 @@ function App() {
               {
                 key: "2",
                 icon: <HighlightOutlined />,
-                label: "Experience",
+                label: "Career Objective",
               },
               {
                 key: "3",
                 icon: <EnvironmentOutlined />,
-                label: "Education",
+                label: "Study and work",
               },
               {
                 key: "4",

@@ -4,11 +4,119 @@
 .container {
   @include styleCommon;
 }
-.wrap {
-  padding: 20px 50px 50px 50px;
-  h2 {
-    font-size: 50px;
-    font-weight: bold;
-    text-transform: uppercase;
+
+@include responsive_1024 {
+  .wrap {
+    padding: 20px 50px 50px 50px;
+    h2 {
+      font-size: 50px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+      li {
+        font-size: 18px;
+        display: block;
+        width: 100%;
+        line-height: 40px;
+        span {
+          margin-left: 8px;
+        }
+      }
+    }
+  }
+  .styleForIcon {
+    font-size: 16px !important;
+    margin-right: 10px;
+    color: $orange;
+  }
+}
+
+@include responsive_768 {
+  .wrap {
+    padding: 20px 50px 50px 50px;
+    h2 {
+      font-size: 50px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+      li {
+        font-size: 18px;
+        display: block;
+        width: 100%;
+        line-height: 40px;
+        span {
+          margin-left: 8px;
+        }
+      }
+    }
+  }
+  .styleForIcon {
+    font-size: 16px !important;
+    margin-right: 10px;
+    color: $orange;
+  }
+}
+
+@include responsive_375 {
+  .wrap {
+    padding: 30px 20px 20px;
+    h2 {
+      font-size: 30px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+      li {
+        font-size: 18px;
+        display: block;
+        width: 100%;
+        line-height: 40px;
+        span {
+          margin-left: 8px;
+        }
+      }
+    }
+  }
+  .styleForIcon {
+    font-size: 16px !important;
+    margin-right: 10px;
+    color: $orange;
+  }
+}
+
+@include responsive_320 {
+  .wrap {
+    padding: 30px 10px 10px;
+    h2 {
+      font-size: 30px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+      li {
+        font-size: 18px;
+        display: block;
+        width: 100%;
+        line-height: 40px;
+        span {
+          margin-left: 8px;
+        }
+      }
+    }
+  }
+  .styleForIcon {
+    font-size: 16px !important;
+    margin-right: 10px;
+    color: $orange;
   }
 }

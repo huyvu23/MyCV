@@ -4,28 +4,87 @@
 .container {
   @include styleCommon;
 }
-.wrap {
-  padding: 20px 50px 50px 50px;
-  h2 {
-    font-size: 50px;
-    font-weight: bold;
-    text-transform: uppercase;
-  }
-  strong {
-    margin-left: 10px;
-  }
-  ul {
-    list-style-type: none;
-    padding: 0;
-    @include responsive_1024 {
+
+@include responsive_1024 {
+  .wrap {
+    padding: 20px 50px 50px 50px;
+    h2 {
+      font-size: 50px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    strong {
+      margin-left: 10px;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
       li {
         height: 40px;
         line-height: 40px;
       }
     }
-    @include responsive_375 {
+  }
+}
+
+@include responsive_768 {
+  .wrap {
+    padding: 20px 50px 50px 50px;
+    h2 {
+      font-size: 50px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    strong {
+      margin-left: 10px;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+      li {
+        line-height: 36px;
+      }
+    }
+  }
+}
+
+@include responsive_375 {
+  .wrap {
+    padding: 20px 30px 30px 30px;
+    h2 {
+      font-size: 50px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    strong {
+      margin-left: 10px;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
       li {
         line-height: 30px;
+      }
+    }
+  }
+}
+
+@include responsive_320 {
+  .wrap {
+    padding: 10px 30px 30px 30px;
+    h2 {
+      font-size: 50px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    strong {
+      margin-left: 10px;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+      li {
+        line-height: 24px;
       }
     }
   }

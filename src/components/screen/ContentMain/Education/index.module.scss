@@ -4,3 +4,103 @@
 .container {
   @include styleCommon;
 }
+
+@include responsive_1024 {
+  .wrap {
+    padding: 20px 50px;
+    h2 {
+      font-size: 50px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    .colorLocation {
+      color: $colorMain;
+    }
+    ul {
+      list-style-type: none;
+      margin-bottom: 80px;
+      padding: 0;
+      li {
+        line-height: 40px;
+      }
+    }
+  }
+}
+
+@include responsive_768 {
+  .wrap {
+    padding: 20px 50px;
+    h2 {
+      font-size: 50px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    .colorLocation {
+      color: $colorMain;
+    }
+    ul {
+      list-style-type: none;
+      margin-bottom: 80px;
+      padding: 0;
+      li {
+        line-height: 40px;
+      }
+    }
+  }
+}
+
+@include responsive_375 {
+  .wrap {
+    padding: 20px 30px;
+    h2 {
+      font-size: 50px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    .colorLocation {
+      color: $colorMain;
+    }
+    ul {
+      list-style-type: none;
+      margin-bottom: 80px;
+      padding: 0;
+      li {
+        line-height: 30px;
+      }
+    }
+  }
+}
+
+@include responsive_320 {
+  .wrap {
+    padding: 20px 30px;
+    h2 {
+      font-size: 50px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    .colorLocation {
+      color: $colorMain;
+    }
+    ul {
+      list-style-type: none;
+      margin-bottom: 80px;
+      padding: 0;
+      li {
+        line-height: 20px;
+      }
+    }
+  }
+}
+
+.iconDescription {
+  color: $orange;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.iconCheck {
+  color: $colorMain;
+  font-size: 16px;
+  margin-right: 10px;
+}
